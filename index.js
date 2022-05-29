@@ -39,7 +39,7 @@ async function addTo() {
    }
 }
 
-//winner declaration date
+//winner declaration date can be changed according to need
 
 var countDownDate = new Date("June 10, 2022 16:00:00").getTime();
 
