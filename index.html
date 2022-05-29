@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="css/styles.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+   <script defer src="face-api.min.js"></script>
+   <script defer src="index.js"></script>
+
+   <script src="https://kit.fontawesome.com/3a2ea64567.js" crossorigin="anonymous"></script>
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   
+   <title>Welcome to lotto place!!</title>
+
+</head>
+
+<body>
+
+   <marquee> 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 💰 </marquee>
+
+    <div class="logo">
+     Lotto &nbsp Place
+    </div>
+
+      <!-- RULES -->
+
+    <section id="rules">
+
+       <div class="rule">
+         ~rules~
+      </div>
+
+      <div class="row">
+
+        <div class="rule-box col-lg-3 col-md-6">
+          <i class="fa-solid fa-clock fa-4x"></i>
+          <p>We believe in fair chance for all.So go try your luck now !</p>
+        </div>
+
+        <div class="rule-box col-lg-3 col-md-6 ">
+          <i class="fa-solid fa-gift fa-4x"></i>
+          <p>Winner will be given a cash prize of ₹10,000!</p>
+        </div>
+
+        <div class="rule-box col-lg-3 col-md-6">
+          <i class="fa-solid fa-circle-user fa-4x"></i>
+          <p>Only one unique entery is allowed per person:Duplicate entries will be discarded.</p>
+        </div>
+
+        <div class="rule-box col-lg-3 col-md-6">   
+          <i class="fa-solid fa-image fa-4x"></i>
+        <p>Image size should not exceed 6mb.</p>
+        </div>
+
+      </div>
+    </section>
+    <!-- UPLOAD_IMAGES -->
+<section id="upload">
+   <div class="row">
+ 
+     <div class="col-lg-6 enter-text">
+     Pick the favourite image of yours to see if you are lucky enough:
+   </div>
+   <div class="col-lg-6">
+     <input class ="btn btn-outline-light btn-lg" type="file" id="inputImage" required/>
+     <input class = "btn btn-dark btn-lg" type ="button" onclick="addTo()" value="Add" /> 
+   </div>
+ 
+ </section>
+     
+   </div>
+       <!-- display winner -->
+ 
+       <section id="winner">
+ 
+       <div class="row">
+ 
+         <div class="col-lg-12 timer">
+           AND THE WINNER OF THE WEEK IS:
+              </div>
+         <div class="col-lg-12">
+            <!--for displaying time left-->
+           <p id="timeleft"></p>
+       <!--for displaying winner imagge after time ends-->
+           <img id="sourceImage" width="400" />
+
+         </div>
+       </div>
+       <form id="claimprize" class="btn-lg ml-auto" action="mailto:ayushiaarohi84@gmail.com" method="POST" name="EmailForm"></form>
+   
+     </section>
+</body>
+
+</html>
